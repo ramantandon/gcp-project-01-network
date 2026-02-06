@@ -18,10 +18,10 @@ resource "google_project_service" "storage" {
   service = "storage-component.googleapis.com"
 }
 
-# resource "google_project_service" "storage-json" {
-#   project = var.project
-#   service = "storage-api.googleapis.com"
-# }
+resource "google_project_service" "storage-json" {
+  project = var.project
+  service = "storage-api.googleapis.com"
+}
 
 # resource "google_project_service" "cloudresourcemanager" {
 #   project = var.project
