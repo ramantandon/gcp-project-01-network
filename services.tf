@@ -3,25 +3,25 @@ resource "google_project_service" "compute" {
   service = "compute.googleapis.com"
 }
 
-resource "google_project_service" "billing" {
-  project = var.project
-  service = "cloudbilling.googleapis.com"
-}
+# resource "google_project_service" "billing" {
+#   project = var.project
+#   service = "cloudbilling.googleapis.com"
+# }
 
-resource "google_project_service" "iam" {
-  project = var.project
-  service = "iam.googleapis.com"
-}
+# resource "google_project_service" "iam" {
+#   project = var.project
+#   service = "iam.googleapis.com"
+# }
 
-resource "google_project_service" "storage" {
-  project = var.project
-  service = "storage-component.googleapis.com"
-}
+# resource "google_project_service" "storage" {
+#   project = var.project
+#   service = "storage-component.googleapis.com"
+# }
 
-resource "google_project_service" "storage-json" {
-  project = var.project
-  service = "storage-api.googleapis.com"
-}
+# resource "google_project_service" "storage-json" {
+#   project = var.project
+#   service = "storage-api.googleapis.com"
+# }
 
 # resource "google_project_service" "cloudresourcemanager" {
 #   project = var.project
