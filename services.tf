@@ -3,10 +3,10 @@ resource "google_project_service" "compute" {
   service = "compute.googleapis.com"
 }
 
-# resource "google_project_service" "billing" {
-#   project = var.project
-#   service = "cloudbilling.googleapis.com"
-# }
+resource "google_project_service" "billing" {
+  project = var.project
+  service = "cloudbilling.googleapis.com"
+}
 
 # resource "google_project_service" "iam" {
 #   project = var.project
