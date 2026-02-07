@@ -13,10 +13,10 @@ resource "google_project_service" "iam" {
   service = "iam.googleapis.com"
 }
 
-# resource "google_project_service" "storage" {
-#   project = var.project_id
-#   service = "storage-component.googleapis.com"
-# }
+resource "google_project_service" "storage" {
+  project = var.project_id
+  service = "storage-component.googleapis.com"
+}
 
 # resource "google_project_service" "storage-json" {
 #   project = var.project_id
